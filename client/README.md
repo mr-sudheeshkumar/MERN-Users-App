@@ -33,5 +33,5 @@ The Goal of this app is to develop a MERN  users-app to achieve the requirements
 - [Click Here](https://github.com/mr-sudheeshkumar/MERN-Users-App/tree/main/screenshots)
 
 ### ***SCREENSHOTS DEMO***
-![1.png](https://github.com/mr-sudheeshkumar/MERN-Users-App/blob/main/screenshots/1.png)
-![2.png](https://github.com/mr-sudheeshkumar/MERN-Users-App/blob/main/screenshots/6.png)
+![1.png](https://github.com/mr-sudheeshkumar/MERN-Users-App/blob/main/screenshots/3.png)
+![2.png](https://github.com/mr-sudheeshkumar/MERN-Users-App/blob/main/screenshots/10.png)

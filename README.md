@@ -33,6 +33,6 @@ The Goal of this app is to develop a MERN  users-app to achieve the requirements
 ## ***SCREENSHOTS***
 - [Click Here](https://github.com/mr-sudheeshkumar/MERN-Users-App/tree/main/screenshots)
 
-### *** SCREENSHOTS DEMO***
+### *** SCREENSHOTS DEMO ***
 ![1.png](https://github.com/mr-sudheeshkumar/MERN-Users-App/tree/main/screenshots/1.png)
 ![2.png](https://github.com/mr-sudheeshkumar/MERN-Users-App/tree/main/screenshots/8.png)

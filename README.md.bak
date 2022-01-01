@@ -30,3 +30,9 @@ The Goal of this app is to develop a MERN  users-app to achieve the requirements
 ![react-router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  ![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 
+## ***SCREENSHOTS***
+- [Click Here](https://github.com/mr-sudheeshkumar/MERN-Users-App/tree/main/screenshots)
+
+### *** SCREENSHOTS DEMO***
+![1.png](https://github.com/mr-sudheeshkumar/MERN-Users-App/tree/main/screenshots/1.png)
+![2.png](https://github.com/mr-sudheeshkumar/MERN-Users-App/tree/main/screenshots/8.png)

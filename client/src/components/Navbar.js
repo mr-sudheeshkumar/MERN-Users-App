@@ -24,12 +24,17 @@ export const Navbar = () =>{
                             <Link className="nav-link" to="/login">{loginstatus?"Logout":"Login"}</Link>
                             </li>
                             <li className="nav-item">
-                            <Link className="nav-link" to="/api/registration">Register</Link>
+                            <Link className="nav-link" to="/register">Register</Link>
                             </li>
                             <li className="nav-item">
-                            <Link className="nav-link" to="/api/list">Users List</Link>
+                            <Link className="nav-link" to="/searchuser">Search User</Link>
                             </li>
-                            
+                            <li className="nav-item">
+                            <Link className="nav-link" to="/updateuser">Edit Details</Link>
+                            </li>
+                            <li className="nav-item">
+                            <Link className="nav-link" to="/deleteuser">Delete User</Link>
+                            </li>
                         </ul>
                         </div>
                     </div>

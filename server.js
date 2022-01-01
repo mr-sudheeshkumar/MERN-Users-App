@@ -11,16 +11,6 @@ mongoose.connect("mongodb://localhost:27017/dcs").then(() => console.log("Mongo 
 
 app.get("/api/", (req,res) => res.send("Hello Fullstack"));
 
-//Get List of all users
-app.get("/api/list", async (req,res) =>{
-    const userList = await userModel.find();
-
-    if(userList.length === 0){
-        return res.json({data : "No users in fullstack"});
-    }
-    return res.json({data: userList});
-    
-});
 
 //Register User
 app.post("/api/registration",(req,res) =>{
@@ -34,9 +24,42 @@ app.post("/api/login", async (req,res) =>{
     const {username,password} = req.body;
     const user = await userModel.findOne({username: username,password: password});
     if(user){
-        return res.json({data: user.name});
+        return res.json({data: user});
     }else{
         return res.json({data: "failed"});
+    }
+});
+
+//Search User
+app.post("/api/searchuser", async (req,res) =>{
+    const {username} = req.body;
+    const userList = await userModel.findOne({username: username});
+    if(userList){
+        return res.json({data: userList});
+    }else{
+        return res.json({data : "not found"});
+    }
+});
+
+//Update User
+app.post("/api/updateuser",async(req,res) =>{
+    const {username,password,name,age} = req.body;
+    const user = await userModel.findOneAndUpdate({username:username},{password:password,name:name,age:age});
+    if(user){
+        return res.json({data: "success"});
+    }else{
+        return res.json({data: "failed"});
+    }
+});
+
+//Delete User
+app.post("/api/deleteuser",async (req,res) =>{
+    const {username} = req.body;
+    const user = await userModel.findOneAndDelete({username:username});
+    if(user){
+        return res.json({data : "success"});
+    }else{
+        return res.json({data : "failed"});
     }
 });
 

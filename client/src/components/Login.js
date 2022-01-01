@@ -8,15 +8,22 @@ import { Logout } from "./Logout";
 export const Login =() =>{
     let navigate = useNavigate();
     const loginbtnclicked = () =>{
-        axios.post("/api/login",user).then((res)=> res.data.data === "failed"? wrongcredentials() :(setusername(String(res.data.data).toUpperCase()),setloginstatus(true),navigate("/")));
+        axios.post("/api/login",user).then((res)=> res.data.data === "failed"? wrongcredentials():rightcredentials(res));
     }
-    const {loginstat, usrname} = useContext(UserContext);
-    const [loginstatus,setloginstatus] = loginstat;
-    const [username,setusername] = usrname;
+    const {loginstat, usrname, usrid} = useContext(UserContext);
+    const[loginstatus,setloginstatus] = loginstat;
+    const[username,setusername] = usrname;
+    const[userid,setuserid] = usrid;
     const [msg, setmsg] = useState("");
     const user={
         username:"",
         password:"",
+    }
+    const rightcredentials = (res) =>{
+        setuserid(res.data.data.username);
+        setusername(String(res.data.data.name).toUpperCase());
+        setloginstatus(true);
+        navigate("/");
     }
     const wrongcredentials =() =>{
         setmsg("Incorrect Credentials Please try again.");
@@ -27,7 +34,7 @@ export const Login =() =>{
             {loginstatus?<Logout />:(<div className="page-body">
                 <div className="top-space"></div>
                 <div>
-                    <h1 className="page-title">LOGIN PAGE</h1>
+                    <h1 className="page-title">LOGIN USER</h1>
                 </div>
                 <div className="body-form">
                     <form>

@@ -1,4 +1,4 @@
-# MERN-Users-App (CLIENT SIDE)
+# MERN-Users-App (FRONTEND)
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/mr-sudheeshkumar/Product-Management-APIs-EXPRESS-/blob/main/assignment5/app.js)
 
 ## **GOAL**
